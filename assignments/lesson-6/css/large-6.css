@@ -1,0 +1,201 @@
+@media (max-width: 600px) {
+    body {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        background-color: #39c2d7;
+        text-align: center;
+    }
+
+    header img, .headings {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1.5em 1.5em;;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 3em;
+        color: #fff
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+        font-style: italic;
+        color: #044166
+    }
+
+    nav ul {
+        text-align: center;
+        background-color: #044166;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    nav a {
+        display: block;
+        font-family: 'Nunito', sans-serif;
+        text-decoration: none;
+        color: white;
+        padding: 1.5em;
+    }
+
+    nav a:hover {
+        background-color: #033249;
+        transition: 0.6s;
+    }
+
+    nav a.active {
+        font-family: 'Nunito ExtraBold', sans-serif;
+        color: #39c2d7;
+        background-color: #033249;
+    }
+
+    h2 {
+        font-size: 2em;
+        text-align: center;
+        padding: 2em 0em 1em 0em;
+        margin: 0;
+        color: #39c2d7;
+    }
+
+    .hero-div {
+        position: relative;
+        width: 960px;
+        height: 300px;
+        margin: 10px auto;
+    }
+
+    .img-hero {
+        width: 100%;
+        height: 400px;
+    }
+
+    h4 {
+        margin: 0;
+        padding: .5em;
+    }
+
+    .weather-sum {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        padding: 1em 1em;
+        background-color: #39c2d7;
+        opacity: 0.9;
+    }
+
+    .forecast-div {
+        text-align: center;
+        width: 800px;
+        height: 100px;
+        margin: 5em auto;
+        padding: 1em 1em;
+    }
+
+    .forecast-tab, .forecast-th, .forecast-td {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+    }
+
+    .forecast-th {
+        background-color: #39c2d7;
+        color: #fff;
+    }
+
+    .forecast-th, .forecast-td {
+        padding: .7em 2.5em;
+    }
+
+    .article-div {
+        position: relative;
+        width: 960px;
+        height: 300px;
+        margin: 10px auto;
+        background-color: #eee;
+    }
+
+    h5 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .art-p {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 450px;
+        color: rgb(25, 25, 25);
+        line-height: 1.5em;
+    }
+
+    .art-img {
+        position: absolute;
+        top: 30px;
+        left: 565px;
+        width: 23em;
+    }
+
+    .footer-div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: #044166;
+        margin-top: 5em;
+        padding: 5em;
+    }
+
+    .footer-info {
+        color: white;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .img-map {
+        width: 400px;
+    }
+
+    .footer-info, .footer-map {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    h5 {
+        font-size: 1.5em;
+        color: #39c2d7;
+    }
+
+    .footer-icon {
+        width: 2em;
+        height: 2em;
+        border-radius: 5px;
+    }
+
+    .footer-copy {
+        text-align: center;
+        background-color: #39c2d7;
+        color: #fff;
+        margin: 0;
+        padding: .5em;
+    }
+}
