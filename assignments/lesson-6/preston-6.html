@@ -11,57 +11,59 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <header>
-                <img src="images/weatheria-logo-01.png" alt="Weatheria Logo">
-                <section class="headings">
-                    <h1>Weatheria</h1>
-                    <div class="motto">
-                        <h2>Your Personal Weather Companion</h2>
-                    </div>
-                </section>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="active">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
-            <main>
-                <h3>Preston Town</h3>
-                <div class="hero-div">
-                    <img src="images/img-hero.jpg" class="hero-img" alt="Preston Town">
-                    <div class="weather-sum">
-                        <table>
-                            <h4 id="weather-head">Weather Summary</h4>
-                            <hr>
-                            <tr>
-                                <td>Currently</td>
-                                <td>: Sunny</td>
-                            </tr>
-                            <tr>
-                                <td>High</td>
-                                <td>: 76 ºF</td>
-                            </tr>
-                            <tr>
-                                <td>Wind Chill</td>
-                                <td>: 78 ºF</td>
-                            </tr>
-                            <tr>
-                                <td>Humidity</td>
-                                <td>: 65 %</td>
-                            </tr>
-                            <tr>
-                                <td>Wind Speed</td>
-                                <td>: 5 mph</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+        <!-- Header Codes Here -->
+        <header>
+            <img src="images/weatheria-logo-01.png" alt="Weatheria Logo">
+            <h1>Weatheria</h1>
+            <h2>Your Personal Weather Companion</h2>
+        </header>
+
+        <!-- Navigation Codes Here -->
+        <nav class="clearfix">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Codes Here -->
+        <main>
+            
+            <section class="sctn sctn-01">
+            <h1>Preston Town</h1>
+            <div class="sctn-hero">
+                <figure>
+                    <img src="images/img-hero.jpg" alt="Preston Town">
+                </figure>
+                <table>
+                    <th colspan="2">Weather Summary</th>
+                    <tr>
+                        <td>Currently</td>
+                        <td>: Sunny</td>
+                    </tr>
+                    <tr>
+                        <td>High</td>
+                        <td>: 76 ºF</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td>: 78 ºF</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td>: 65 %</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td>: 5 mph</td>
+                    </tr>
+                </table>
+            </div>
+            </section>
 
                 <!--
                 <div class="forecast-div">
@@ -87,49 +89,49 @@
                 </div>
                 -->
 
-                <div class="art-div">
-                    <img src="images/img-art.jpg" class="art-img" alt="friends photo">
-                    <article class="art-p">
-                        <h4 id="art-head">Friends Review</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Sit amet consectetur adipiscing elit duis tristique sollicitudin.
-                            Integer malesuada nunc vel risus commodo viverra.
-                            Eget gravida cum sociis natoque penatibus et magnis.
-                            Auctor urna nunc id cursus metus aliquam. Leo vel fringilla est ullamcorper.
-                            Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
-                        </p>
-                    </article>
-                </div>
+            <section class="sctn sctn-03">
+                <figure>
+                    <img src="images/img-art.jpg" alt="friends photo">
+                </figure>
+                <article>
+                    <h2> Friends Review </h2>
+                    <h3> By: Edvard Jimenez </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Sit amet consectetur adipiscing elit duis tristique sollicitudin.
+                        Integer malesuada nunc vel risus commodo viverra.
+                        Eget gravida cum sociis natoque penatibus et magnis.
+                        Auctor urna nunc id cursus metus aliquam. Leo vel fringilla est ullamcorper.
+                        Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
+                    </p>
+                </article>
+            </section>
+        </main>
 
-            </main>
-            <footer>
-                <div class="footer-div">
-                    <div class="footer-info">
-                        <h4 id="footer-head">Weatheria</h4>
-                        <hr>
-                        <p>
-                            Exact Address, <br>
-                            Town, City, Zipcode
-                            <br><br>
-                            Telephone Number<br>
-                            Email Address
-                            <br><br>
-                            <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
-                            <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
-                            <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
-                            <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
-                        </p>
-                    </div>
-                    <div class="footer-map">
-                        <img src="images/img-map.jpg" class="img-map" alt="map">
-                    </div>
-                </div>
-
-                <div class="footer-copy">
-                    <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
-                </div>
-            </footer>
-        </div>
+            <!-- Footer Codes Here -->
+        <footer>
+            <div class="footer-info">
+                <h2>Weatheria</h2>
+                <hr>
+                <p>
+                    Exact Address, <br>
+                    Town, City, Zipcode
+                    <br><br>
+                    Telephone Number<br>
+                    Email Address
+                    <br><br>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
+                </p>
+                <figure>
+                    <img src="images/img-map.jpg" alt="map">
+                </figure>
+            </div>
+            <div class="footer-copy">
+                <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+            </div>
+        </footer>
     </body>
 </html>

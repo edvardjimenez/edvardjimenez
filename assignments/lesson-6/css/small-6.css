@@ -1,164 +1,119 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Body Rules */
 body {
     font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 16px;
 }
 
-.container {
-    width: 425px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* Header Rules */
 header {
-	background-color: #39c2d7;
-	text-align: center;
+    background-color: #39c2d7;
+    padding: 1rem 2%;
 }
 
-header img {
-	display: inline-block;
-    vertical-align: middle;
-    padding: 1.5em 1.5em 0em 1.5em;
-}
+header h1 { margin: 0; }
+header h2 { margin: 0; }
 
-.headings {
-	display: inline-block;
-    vertical-align: middle;
-    padding: 0em 1.5em 3em 1.5em;
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 3em;
-    color: #fff
-}
-
-h2 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-style: italic;
-    font-size: 1.1em;
-    color: #044166
-}
-
-nav ul {
-    text-align: center;
-    background-color: #044166;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: block;
-}
-
+/* Navigation Rules */
+nav { background-color: #044166; }
+nav ul { margin: 0; padding: 0; }
+nav li { list-style-type: none;}
+nav li.active { background-color: #033249; }
 nav a {
     display: block;
-    font-family: 'Nunito', sans-serif;
-    text-decoration: none;
-    color: white;
-    padding: 1.5em;
-}
-
-nav a:hover {
-    background-color: #033249;
-    transition: 0.6s;
-}
-
-nav a.active {
-    font-family: 'Nunito ExtraBold', sans-serif;
-    color: #39c2d7;
-    background-color: #033249;
-}
-
-h3 {
-    font-size: 1.5em;
+    padding: .8rem;
+    color: #eee;
     text-align: center;
-    padding: .5em;
-    color: #39c2d7;
+    text-decoration: none;
+}
+nav a:hover { background-color: #033249; }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.hero-div {
+
+/* Main Rules */
+.sctn-01 {
+    padding: 1rem 2%;
+    display: block;
+}
+
+.sctn-01 h1 {
+    color: #39c2d7;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sctn-hero {
     position: relative;
 }
 
-.hero-img {
-    width: 100%;
+.sctn-01 figure { width: 100%; margin: 0; }
+.sctn-01 figure img { width: 100%; }
+
+.sctn-01 table th {
+    padding: 1rem;
 }
 
-#weather-head {
-    margin-top: 0;
-}
-
-.weather-sum{
+.sctn-01 table {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 1em;
+    top: 1.5rem;
+    left: 1.5rem;
     background-color: #39c2d7;
     color: white;
-    width: 10em;
-    margin: 2em;
-    padding: 1.5em 1.5em;
+    width: 13rem;
+    padding: 1rem 1rem;
     opacity: 0.9;
 }
 
-.art-div {
-    margin: 5em 0em 1em 0em;
-    background-color: rgb(240, 240, 240);
-    display: inline-block;
-    text-align: center;
+.sctn-03 {
+    background-color: #eee;
+    padding: 1rem 2%;
+}
+.sctn-03 figure { width: 100%; margin: 0; }
+.sctn-03 figure img { width: 100%; }
+
+.sctn-03 article h2 { font-size: 1.5rem; color: #333; margin-bottom: .25rem;}
+.sctn-03 article h3 { font-size: 1rem; color: #333; margin-top: .25rem;}
+
+.sctn-03 article {
+    line-height: 1.5rem;
+    color: #333;
 }
 
-.art-img {
-    width: 90%;
-    margin-top: 1.3em;
-}
 
-#art-head {
+/* Footer Rules */
+.footer-info h2 {
+    font-size: 1.5rem;
     color: #39c2d7;
-    font-size: 1.5em;
-    margin: 1em;
-    padding: 0;
 }
 
-.art-p {
-    padding: 1.3em;
-    color: rgb(61, 61, 61);
-    line-height: 1.7em;
-}
+.footer-info hr { width: 30%; }
 
-.footer-div {
+.footer-info {
+    color: #eee;
+    text-align: center;
     background-color: #044166;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+    padding: 1rem;
 }
 
-#footer-head {
-    text-align: center;
-}
+.footer-info figure { width: 100%; margin: 0; padding: 1rem 2%; }
+.footer-info figure img { width: 100%; border-radius: 1rem; }
 
-hr {
-    width: 50%;
-}
-
-.footer-icon {
-    width: 2.5em;
-}
-
-.img-map {
-    width: 90%;
-}
+.footer-icon { width: 3rem; border-radius: .5rem; margin: 1rem .5%; }
 
 .footer-copy {
-    background-color: #39c2d7;
-    color: #fff;
+    color: #eee;
     text-align: center;
+    background-color: #39c2d7;
     margin: 0;
-    padding: 1em;
+    padding: .3rem 2%;
 }
