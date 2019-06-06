@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>CIT 230 Assignment | Week 04 | Preston Town Page</title>
-        <meta name="description" content="Preston Town Page Build">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small-6.css">
-        <link rel="stylesheet" href="css/large-6.css">
-        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Header Codes Here -->
-        <header>
-            <img src="images/weatheria-logo-01.png" alt="Weatheria Logo">
-            <h1>Weatheria</h1>
-            <h2>Your Personal Weather Companion</h2>
-        </header>
 
-        <!-- Navigation Codes Here -->
-        <nav class="clearfix">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment | Week 04 | Preston Town Page</title>
+    <meta name="description" content="Preston Town Page Build">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
 
-        <!-- Main Codes Here -->
-        <main>
-            
-            <section class="sctn sctn-01">
+<body>
+    <!-- Header Codes Here -->
+    <header>
+        <img src="images/weatheria-logo-01.png" alt="Weatheria Logo">
+        <h1>Weatheria</h1>
+        <h2>Your Personal Weather Companion</h2>
+    </header>
+
+    <!-- Navigation Codes Here -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Codes Here -->
+    <main>
+
+        <section class="sctn sctn-01">
             <h1>Preston Town</h1>
             <div class="sctn-hero">
                 <figure>
-                    <img src="images/img-hero.jpg" alt="Preston Town">
+                    <img src="images/img-hero-600px.jpg" alt="Preston Town">
                 </figure>
                 <table>
                     <th colspan="2">Weather Summary</th>
@@ -63,9 +66,9 @@
                     </tr>
                 </table>
             </div>
-            </section>
+        </section>
 
-                <!--
+        <!--
                 <div class="forecast-div">
                     <section class="forecast-sec">
                         <h2>5 Day Forecast</h2>
@@ -89,49 +92,57 @@
                 </div>
                 -->
 
-            <section class="sctn sctn-03">
-                <figure>
-                    <img src="images/img-art.jpg" alt="friends photo">
-                </figure>
-                <article>
-                    <h2> Friends Review </h2>
-                    <h3> By: Edvard Jimenez </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Sit amet consectetur adipiscing elit duis tristique sollicitudin.
-                        Integer malesuada nunc vel risus commodo viverra.
-                        Eget gravida cum sociis natoque penatibus et magnis.
-                        Auctor urna nunc id cursus metus aliquam. Leo vel fringilla est ullamcorper.
-                        Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
-                    </p>
-                </article>
-            </section>
-        </main>
-
-            <!-- Footer Codes Here -->
-        <footer>
-            <div class="footer-info">
-                <h2>Weatheria</h2>
-                <hr>
+        <section class="sctn sctn-03">
+            <figure>
+                <img src="images/img-art.jpg" alt="friends photo">
+            </figure>
+            <article>
+                <h2> Friends Review </h2>
+                <h3> By: Edvard Jimenez </h3>
                 <p>
-                    Exact Address, <br>
-                    Town, City, Zipcode
-                    <br><br>
-                    Telephone Number<br>
-                    Email Address
-                    <br><br>
-                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
-                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
-                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
-                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Sit amet consectetur adipiscing elit duis tristique sollicitudin.
+                    Integer malesuada nunc vel risus commodo viverra.
+                    Eget gravida cum sociis natoque penatibus et magnis.
+                    Auctor urna nunc id cursus metus aliquam. Leo vel fringilla est ullamcorper.
+                    Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
                 </p>
-                <figure>
-                    <img src="images/img-map.jpg" alt="map">
-                </figure>
-            </div>
-            <div class="footer-copy">
-                <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
-            </div>
-        </footer>
-    </body>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Codes Here -->
+    <footer>
+        <div class="footer-info">
+            <h2>Weatheria</h2>
+            <hr>
+            <p>
+                Exact Address, <br>
+                Town, City, Zipcode
+                <br><br>
+                Telephone Number<br>
+                Email Address
+                <br><br>
+                <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png"
+                        alt="facebook icon"></a>
+                <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png"
+                        alt="instagram icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png"
+                        alt="twitter icon"></a>
+                <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png"
+                        alt="youtube icon"></a>
+            </p>
+            <figure>
+                <img src="images/img-map.jpg" alt="map">
+            </figure>
+        </div>
+        <div class="footer-copy">
+            <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+</body>
+
 </html>

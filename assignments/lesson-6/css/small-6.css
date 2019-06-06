@@ -16,22 +16,53 @@ header {
     padding: 1rem 2%;
 }
 
-header h1 { margin: 0; }
-header h2 { margin: 0; }
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header h1, h2 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1rem;
+    color: #044166;
+    margin-bottom: 1rem;
+}
 
 /* Navigation Rules */
 nav { background-color: #044166; }
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #eee;
+}
+
 nav ul { margin: 0; padding: 0; }
 nav li { list-style-type: none;}
 nav li.active { background-color: #033249; }
 nav a {
-    display: block;
     padding: .8rem;
     color: #eee;
     text-align: center;
     text-decoration: none;
 }
-nav a:hover { background-color: #033249; }
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover { background-color: rgba(3, 50, 73, 0.9); }
+
+nav ul.hide { display: none; }
 
 .clearfix:after {
     content: "";
@@ -60,17 +91,19 @@ nav a:hover { background-color: #033249; }
 .sctn-01 figure img { width: 100%; }
 
 .sctn-01 table th {
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .sctn-01 table {
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    border: 1px solid;
+    top: 1rem;
+    left: 1rem;
     background-color: #39c2d7;
+    font-size: .8rem;
     color: white;
-    width: 13rem;
-    padding: 1rem 1rem;
+    width: 10rem;
+    padding: .8rem .5rem;
     opacity: 0.9;
 }
 

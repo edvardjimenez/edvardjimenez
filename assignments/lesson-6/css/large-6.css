@@ -1,6 +1,12 @@
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 64rem) {
+    nav button { display: none; }
+    nav ul.hide { display: block; }
     nav li {
         float: left;
         width: 16%;
+    }
+
+    nav ul li a {
+        border: none;
     }
 } /* End of Media Query */
