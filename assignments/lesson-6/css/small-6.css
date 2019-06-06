@@ -4,17 +4,19 @@
     box-sizing: border-box;
 }
 
-/* Body Rules */
+/* -- Body Rules -- */
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
 
-/* Header Rules */
+/* -- Header Rules -- */
 header {
     background-color: #39c2d7;
     padding: 1rem 2%;
 }
+
+header figure { margin: 0; }
 
 header img {
     display: block;
@@ -33,7 +35,7 @@ header h2 {
     margin-bottom: 1rem;
 }
 
-/* Navigation Rules */
+/* -- Navigation Rules -- */
 nav { background-color: #044166; }
 
 nav button {
