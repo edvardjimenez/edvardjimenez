@@ -9,4 +9,30 @@
     nav ul li a {
         border: none;
     }
+
+    /* ---- Main Rules here ---- */
+    .sctn {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .sctn-01 table th {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+    
+    .sctn-01 table {
+        position: absolute;
+        border: 1px solid;
+        top: 3rem;
+        left: 3rem;
+        background-color: #39c2d7;
+        font-size: 1rem;
+        color: white;
+        width: 13rem;
+        padding: .8rem .5rem;
+        opacity: 0.9;
+    }
+
+
 } /* End of Media Query */

@@ -16,11 +16,12 @@
     <!-- Header Codes Here -->
     <header>
         <picture>
-            <img src="images/weatheria-logo-75px.png" alt="Weatheria Logo"
-            srcset="images/weatheria-logo-75px.png 1x, images/wetheria-logo-225px.png">
+            <img src="images/weatheria-logo-75px.png" alt="Weatheria Logo">
         </picture>
-        <h1>Weatheria</h1>
-        <h2>Your Personal Weather Companion</h2>
+        <div class="headings">
+            <h1>Weatheria</h1>
+            <h2>Your Personal Weather Companion</h2>
+        </div>
     </header>
 
     <!-- Navigation Codes Here -->
@@ -42,9 +43,11 @@
         <section class="sctn sctn-01">
             <h1>Preston Town</h1>
             <div class="sctn-hero">
-                <figure>
-                    <img src="images/img-hero-1200.jpg" alt="Preston Town" sizes="100%" srcset="images/img-hero-400.jpg 400w, images/img-hero-1024.jpg 1024w">
-                </figure>
+                <picture>
+                    <source srcset="images/img-hero-400.jpg" media="(min-width: 500px) and (max-width: 799)">
+                    <source srcset="images/img-hero-1024.jpg" media="(min-width: 800px)">
+                    <img src="images/img-hero-400.jpg" alt="Preston Town">
+                </picture>
                 <table>
                     <th colspan="2">Weather Summary</th>
                     <tr>
@@ -71,29 +74,25 @@
             </div>
         </section>
 
-        <!--
-                <div class="forecast-div">
-                    <section class="forecast-sec">
-                        <h2>5 Day Forecast</h2>
-                        <table class="forecast-tab">
-                            <tr>
-                                <th class="forecast-th">Monday</th>
-                                <th class="forecast-th">Tuesday</th>
-                                <th class="forecast-th">Wednesday</th>
-                                <th class="forecast-th">Thursday</th>
-                                <th class="forecast-th">Friday</th>
-                            </tr>
-                            <tr>
-                                <td class="forecast-td">78 ºF</td>
-                                <td class="forecast-td">84 ºF</td>
-                                <td class="forecast-td">79 ºF</td>
-                                <td class="forecast-td">77 ºF</td>
-                                <td class="forecast-td">87 ºF</td>
-                            </tr>
-                        </table>
-                    </section>
-                </div>
-                -->
+        <section class="sctn sctn-02">
+            <h2>5 Day Forecast</h2>
+            <table class="forecast-tab">
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>78 ºF</td>
+                    <td>84 ºF</td>
+                    <td>79 ºF</td>
+                    <td>77 ºF</td>
+                    <td>87 ºF</td>
+                </tr>
+            </table>
+        </section>
 
         <section class="sctn sctn-03">
             <figure>

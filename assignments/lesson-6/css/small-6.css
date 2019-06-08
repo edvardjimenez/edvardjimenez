@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
-/* -- Body Rules -- */
+/* ---- Body Rules ---- */
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
 
-/* -- Header Rules -- */
+/* ---- Header Rules ---- */
 header {
     background-color: #39c2d7;
     padding: 1rem 2%;
 }
 
-header figure { margin: 0; }
+header picture { margin: 0; }
 
 header img {
     display: block;
@@ -35,7 +35,7 @@ header h2 {
     margin-bottom: 1rem;
 }
 
-/* -- Navigation Rules -- */
+/* ---- Navigation Rules ---- */
 nav { background-color: #044166; }
 
 nav button {
@@ -72,10 +72,9 @@ nav ul.hide { display: none; }
     clear: both;
 }
 
-
-/* Main Rules */
+/* ---- Main Rules ---- */
 .sctn-01 {
-    padding: 1rem 2%;
+    padding: 1rem 3%;
     display: block;
 }
 
@@ -89,8 +88,8 @@ nav ul.hide { display: none; }
     position: relative;
 }
 
-.sctn-01 figure { width: 100%; margin: 0; }
-.sctn-01 figure img { width: 100%; }
+.sctn-01 picture { width: 100%; margin: 0; }
+.sctn-01 picture img { width: 100%; }
 
 .sctn-01 table th {
     padding: .5rem;
@@ -109,24 +108,39 @@ nav ul.hide { display: none; }
     opacity: 0.9;
 }
 
+.sctn-02 {
+    display: none;
+}
+
 .sctn-03 {
     background-color: #eee;
-    padding: 1rem 2%;
+    margin-top: 1rem;
+    padding: 1rem 3%;
 }
-.sctn-03 figure { width: 100%; margin: 0; }
+.sctn-03 figure { width: 100%; margin: 0 0 1rem 0; }
 .sctn-03 figure img { width: 100%; }
 
-.sctn-03 article h2 { font-size: 1.5rem; color: #333; margin-bottom: .25rem;}
-.sctn-03 article h3 { font-size: 1rem; color: #333; margin-top: .25rem;}
+.sctn-03 article h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
 
-.sctn-03 article {
+.sctn-03 article h3 {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-top: .25rem;
+}
+
+.sctn-03 article p {
     line-height: 1.5rem;
     color: #333;
 }
 
 
-/* Footer Rules */
+/* ---- Footer Rules ---- */
 .footer-info h2 {
+    margin-top: 1rem;
     font-size: 1.5rem;
     color: #39c2d7;
 }
