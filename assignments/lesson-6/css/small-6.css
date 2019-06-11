@@ -23,16 +23,17 @@ header img {
     margin: 0 auto;
 }
 
-header h1, h2 {
+header h1 {
     text-align: center;
     color: #fff;
     margin: 0;
 }
 
 header h2 {
+    text-align: center;
     font-size: 1rem;
     color: #044166;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 /* ---- Navigation Rules ---- */
@@ -74,14 +75,15 @@ nav ul.hide { display: none; }
 
 /* ---- Main Rules ---- */
 .sctn-01 {
-    padding: 1rem 3%;
+    padding: 2rem 3%;
     display: block;
 }
 
 .sctn-01 h1 {
-    color: #39c2d7;
     font-size: 1.5rem;
     text-align: center;
+    color: #39c2d7;
+    margin-top: 0;
 }
 
 .sctn-hero {
@@ -114,11 +116,10 @@ nav ul.hide { display: none; }
 
 .sctn-03 {
     background-color: #eee;
-    margin-top: 1rem;
     padding: 1rem 3%;
 }
-.sctn-03 figure { width: 100%; margin: 0 0 1rem 0; }
-.sctn-03 figure img { width: 100%; }
+.sctn-03 picture { margin: 0 0 1rem 0; }
+.sctn-03 picture img { width: 100%; }
 
 .sctn-03 article h2 {
     font-size: 1.5rem;
@@ -154,8 +155,8 @@ nav ul.hide { display: none; }
     padding: 1rem;
 }
 
-.footer-info figure { width: 100%; margin: 0; padding: 1rem 2%; }
-.footer-info figure img { width: 100%; border-radius: 1rem; }
+.footer-info picture { width: 100%; margin: 0; padding: 1rem 2%; }
+.footer-info picture img { width: 100%; border-radius: 1rem; }
 
 .footer-icon { width: 3rem; border-radius: .5rem; margin: 1rem .5%; }
 

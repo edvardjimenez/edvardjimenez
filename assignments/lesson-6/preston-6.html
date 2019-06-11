@@ -75,32 +75,36 @@
         </section>
 
         <section class="sctn sctn-02">
-            <h2>5 Day Forecast</h2>
-            <table class="forecast-tab">
+            <h1>5 Day Forecast</h1>
+            <table class="forecast-table">
                 <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                    <th class="forecast-th">Monday</th>
+                    <th class="forecast-th">Tuesday</th>
+                    <th class="forecast-th">Wednesday</th>
+                    <th class="forecast-th">Thursday</th>
+                    <th class="forecast-th">Friday</th>
                 </tr>
                 <tr>
-                    <td>78 ºF</td>
-                    <td>84 ºF</td>
-                    <td>79 ºF</td>
-                    <td>77 ºF</td>
-                    <td>87 ºF</td>
+                    <td class="forecast-td">78 ºF</td>
+                    <td class="forecast-td">84 ºF</td>
+                    <td class="forecast-td">79 ºF</td>
+                    <td class="forecast-td">77 ºF</td>
+                    <td class="forecast-td">87 ºF</td>
                 </tr>
             </table>
         </section>
 
         <section class="sctn sctn-03">
-            <figure>
-                <img src="images/img-art.jpg" alt="friends photo">
-            </figure>
+            <picture>
+                <source srcset="images/img-art-small.jpg" media="(min-width: 500px) and (max-width: 799)">
+                <source srcset="images/img-art-large.jpg" media="(min-width: 800px)">
+                <img src="images/img-art-small.jpg" alt="Friends Image">
+            </picture>
+
+            <h2> Friends Review </h2>
+            <h3> By: Edvard Jimenez </h3>
+
             <article>
-                <h2> Friends Review </h2>
-                <h3> By: Edvard Jimenez </h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.
@@ -109,6 +113,10 @@
                     Eget gravida cum sociis natoque penatibus et magnis.
                     Auctor urna nunc id cursus metus aliquam. Leo vel fringilla est ullamcorper.
                     Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Sit amet consectetur adipiscing elit duis tristique sollicitudin.
                 </p>
             </article>
         </section>
@@ -135,10 +143,14 @@
                 <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png"
                         alt="youtube icon"></a>
             </p>
-            <figure>
-                <img src="images/img-map.jpg" alt="map">
-            </figure>
+
+            <picture>
+                <source srcset="images/img-map-small.jpg" media="(min-width: 500px) and (max-width: 799)">
+                <source srcset="images/img-map-large.jpg" media="(min-width: 800px)">
+                <img src="images/img-map-small.jpg" alt="Map">
+            </picture>
         </div>
+
         <div class="footer-copy">
             <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
         </div>
