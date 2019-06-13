@@ -26,7 +26,7 @@
 
     <!-- Navigation Codes Here -->
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
@@ -124,25 +124,27 @@
 
     <!-- Footer Codes Here -->
     <footer>
-        <div class="footer-info">
-            <h2>Weatheria</h2>
-            <hr>
-            <p>
-                Exact Address, <br>
-                Town, City, Zipcode
-                <br><br>
-                Telephone Number<br>
-                Email Address
-                <br><br>
-                <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png"
-                        alt="facebook icon"></a>
-                <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png"
-                        alt="instagram icon"></a>
-                <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png"
-                        alt="twitter icon"></a>
-                <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png"
-                        alt="youtube icon"></a>
-            </p>
+        <div class="footer-div">
+            <div class="footer-info">
+                <h2>Weatheria</h2>
+                <hr>
+                <p>
+                    Exact Address, <br>
+                    Town, City, Zipcode
+                    <br><br>
+                    Telephone Number<br>
+                    Email Address
+                    <br><br>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png"
+                            alt="facebook icon"></a>
+                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png"
+                            alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png"
+                            alt="twitter icon"></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png"
+                            alt="youtube icon"></a>
+                </p>
+            </div>
 
             <picture>
                 <source srcset="images/img-map-small.jpg" media="(min-width: 500px) and (max-width: 799)">
@@ -153,10 +155,12 @@
 
         <div class="footer-copy">
             <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+            <p id="dateDisplay"></p>
         </div>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
 </body>
 
 </html>

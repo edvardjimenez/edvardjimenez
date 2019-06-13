@@ -40,10 +40,10 @@ header h2 {
 nav { background-color: #044166; }
 
 nav button {
-    margin: .2rem 2%;
+    margin: .5rem 2%;
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #eee;
 }
 
@@ -140,6 +140,8 @@ nav ul.hide { display: none; }
 
 
 /* ---- Footer Rules ---- */
+footer { background-color: #044166; }
+
 .footer-info h2 {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -151,12 +153,13 @@ nav ul.hide { display: none; }
 .footer-info {
     color: #eee;
     text-align: center;
-    background-color: #044166;
     padding: 1rem;
 }
 
-.footer-info picture { width: 100%; margin: 0; padding: 1rem 2%; }
-.footer-info picture img { width: 100%; border-radius: 1rem; }
+footer picture img {
+    width: 100%;
+    padding: 1rem 2%;
+}
 
 .footer-icon { width: 3rem; border-radius: .5rem; margin: 1rem .5%; }
 
@@ -165,5 +168,9 @@ nav ul.hide { display: none; }
     text-align: center;
     background-color: #39c2d7;
     margin: 0;
-    padding: .3rem 2%;
+    padding: 1rem 2%;
+}
+
+.footer-copy p {
+    margin: .3rem;
 }
