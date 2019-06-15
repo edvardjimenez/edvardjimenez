@@ -35,7 +35,6 @@ header h2 {
 .headings { margin-left: .5rem; }
 
 
-
 /* ---- Navigation Rules ---- */
 nav { background-color: #044166; }
 
@@ -46,7 +45,7 @@ nav li.active { background-color: #033249; }
 
 nav li a {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     text-decoration: none;
     color: #eee;
@@ -64,16 +63,16 @@ nav a:hover { background-color: rgba(3, 50, 73, 0.9); }
 }
 
 /* ---- Main Rules ---- */
-.sctn-01 {
-    padding: 2rem 3%;
-    display: block;
-}
-
-.sctn-01 h1 {
+main h1 {
     font-size: 1.5rem;
     text-align: center;
     color: #39c2d7;
-    margin-top: 0;
+    margin: 2rem 0 0 0;
+}
+
+.sctn-01 {
+    padding: 2rem 3%;
+    display: block;
 }
 
 .sctn-hero {
@@ -84,7 +83,9 @@ nav a:hover { background-color: rgba(3, 50, 73, 0.9); }
 .sctn-01 picture img { width: 100%; }
 
 .sctn-01 table th {
+    font-size: 1.1rem;
     padding: .5rem;
+    border-bottom: .5px solid white;
 }
 
 .sctn-01 table {
@@ -93,11 +94,15 @@ nav a:hover { background-color: rgba(3, 50, 73, 0.9); }
     top: 1rem;
     left: 1rem;
     background-color: #39c2d7;
-    font-size: .8rem;
+    font-size: 1rem;
     color: white;
-    width: 10rem;
-    padding: .8rem .5rem;
+    width: 13rem;
+    padding: .8rem .8rem;
     opacity: 0.9;
+}
+
+.sctn-01 table td {
+    padding-top: .4rem;
 }
 
 .sctn-02 {
@@ -105,21 +110,21 @@ nav a:hover { background-color: rgba(3, 50, 73, 0.9); }
 }
 
 .sctn-03 {
-    background-color: #eee;
+    background-color: #f3f3f3;
     padding: 1rem 3%;
 }
 .sctn-03 picture { margin: 0 0 1rem 0; }
-.sctn-03 picture img { width: 100%; }
+.sctn-03 picture img { width: 100%; border-radius: .5rem; }
 
-.sctn-03 article h2 {
+.sctn-03 h2 {
+    margin-bottom: .25rem;
     font-size: 1.5rem;
-    color: #333;
+    color: #044166;
 }
 
-.sctn-03 article h3 {
+.sctn-03 h3 {
     font-size: 1rem;
     color: #333;
-    text-align: center;
     margin-top: .25rem;
 }
 
@@ -127,6 +132,34 @@ nav a:hover { background-color: rgba(3, 50, 73, 0.9); }
     line-height: 1.5rem;
     color: #333;
 }
+
+/* ---- Gallery Rules ----*/
+.grid {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 1rem 3% 5rem 3%;
+}
+
+.gallery { margin: 0; }
+
+.gallery img {
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.gallery figcaption {
+    color: #292929;
+    background-color: #eee;
+    line-height: 1.4rem;
+    padding: 1rem 5%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
 
 /* ---- Footer Rules ---- */
@@ -138,25 +171,26 @@ footer { background-color: #044166; }
     color: #39c2d7;
 }
 
-.footer-info hr { width: 30%; }
-
 .footer-info {
     color: #eee;
     text-align: center;
     padding: 1rem;
 }
 
-footer picture img {
-    width: 100%;
-    padding: 1rem 2%;
-}
+.footer-info picture { width: 100%; }
+.footer-info picture img { border-radius: .5rem; width: 100%; }
 
 .footer-icon { width: 3rem; border-radius: .5rem; margin: 1rem .5%; }
 
 .footer-copy {
     color: #eee;
+    font-size: .9rem;
     text-align: center;
     background-color: #39c2d7;
     margin: 0;
-    padding: .3rem 2%;
+    padding: 1.3rem 2%;
+}
+
+.footer-copy p {
+    margin: .3rem;
 }

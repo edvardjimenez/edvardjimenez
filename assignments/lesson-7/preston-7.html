@@ -8,6 +8,7 @@
     <meta name="description" content="Preston Town Page Build">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/medium-7.css">
     <link rel="stylesheet" href="css/large-7.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 </head>
@@ -29,24 +30,26 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li class="active"><a href="preston-7.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
 
     <!-- Main Codes Here -->
     <main>
 
+        <h1>Preston Town</h1>
         <section class="sctn sctn-01">
-            <h1>Preston Town</h1>
             <div class="sctn-hero">
                 <picture>
-                    <source srcset="images/img-hero-400.jpg" media="(min-width: 500px) and (max-width: 799)">
-                    <source srcset="images/img-hero-1024.jpg" media="(min-width: 800px)">
-                    <img src="images/img-hero-400.jpg" alt="Preston Town">
+                    <img src="images/img-hero.jpg" alt="Preston Town" sizes="100vw"
+                    srcset="images/img-hero-small.jpg 400w,
+                            images/img-hero-medium.jpg 800w,
+                            images/img-hero-large.jpg 1100w,
+                            ">
                 </picture>
                 <table>
                     <th colspan="2">Weather Summary</th>
@@ -56,11 +59,11 @@
                     </tr>
                     <tr>
                         <td>High</td>
-                        <td>: 76 ºF</td>
+                        <td>: <span id="tempF">76</span> ºF</td>
                     </tr>
                     <tr>
                         <td>Wind Chill</td>
-                        <td>: 78 ºF</td>
+                        <td>: <span id="windChill"></span></td>
                     </tr>
                     <tr>
                         <td>Humidity</td>
@@ -68,7 +71,7 @@
                     </tr>
                     <tr>
                         <td>Wind Speed</td>
-                        <td>: 5 mph</td>
+                        <td>: <span id="speed">5</span> mph</td>
                     </tr>
                 </table>
             </div>
@@ -96,9 +99,11 @@
 
         <section class="sctn sctn-03">
             <picture>
-                <source srcset="images/img-art-small.jpg" media="(min-width: 500px) and (max-width: 799)">
-                <source srcset="images/img-art-large.jpg" media="(min-width: 800px)">
-                <img src="images/img-art-small.jpg" alt="Friends Image">
+                <img src="images/img-art.jpg" alt="Friends Review" sizes="100vw"
+                srcset="images/img-art-small.jpg 400w,
+                        images/img-art-medium.jpg 800w,
+                        images/img-art-large.jpg 1100w,
+                        ">
             </picture>
 
             <h2> Friends Review </h2>
@@ -124,10 +129,9 @@
 
     <!-- Footer Codes Here -->
     <footer>
-        <div class="footer-div">
-            <div class="footer-info">
+        <div class="footer-info">
+            <div class="footer-contact">
                 <h2>Weatheria</h2>
-                <hr>
                 <p>
                     Exact Address, <br>
                     Town, City, Zipcode
@@ -135,30 +139,30 @@
                     Telephone Number<br>
                     Email Address
                     <br><br>
-                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png"
-                            alt="facebook icon"></a>
-                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png"
-                            alt="instagram icon"></a>
-                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png"
-                            alt="twitter icon"></a>
-                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png"
-                            alt="youtube icon"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
                 </p>
             </div>
 
             <picture>
-                <source srcset="images/img-map-small.jpg" media="(min-width: 500px) and (max-width: 799)">
-                <source srcset="images/img-map-large.jpg" media="(min-width: 800px)">
-                <img src="images/img-map-small.jpg" alt="Map">
+                <img src="images/img-map.jpg" alt="Map" sizes="100vw"
+                srcset="images/img-map-small.jpg 400w,
+                        images/img-map-medium.jpg 800w,
+                        images/img-map-large.jpg 1100w,
+                        ">
             </picture>
         </div>
 
         <div class="footer-copy">
             <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+            <p id="dateDisplay"></p>
         </div>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
-
 </html>
