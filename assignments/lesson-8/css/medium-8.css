@@ -1,0 +1,153 @@
+@media only screen and (min-width: 48rem) {
+    nav ul { text-align: center; }
+    nav li:first-child { display: none; }
+    nav li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: 1rem 1rem;
+    }
+
+    /* ---- Main Rules here ---- */
+    /* ---- Section 1 ---- */
+    .sctn {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .sctn-01 {
+        padding: 2rem 3%;
+        display: block;
+    }
+    
+    .sctn-hero {
+        position: relative;
+    }
+    
+    .sctn-01 picture { width: 100%; margin: 0; }
+    .sctn-01 picture img { width: 100%; }
+    
+    .sctn-01 table th {
+        font-size: 1.3rem;
+        padding: .5rem;
+        border-bottom: .5px solid white;
+    }
+    
+    .sctn-01 table {
+        position: absolute;
+        border: 1px solid;
+        top: 2rem;
+        left: 2rem;
+        background-color: #39c2d7;
+        font-size: 1rem;
+        color: white;
+        width: 13rem;
+        padding: 1rem 1rem;
+        opacity: 0.9;
+    }
+    
+    .sctn-01 table td {
+        padding-top: .4rem;
+    }
+
+    /* ---- Section 2 ---- */
+    .sctn-02 {
+        display: block;
+        padding: 0 3% 2rem 3%;
+    }
+    .sctn-02 h1 {
+        margin: 0 1rem 1rem 1rem;
+        text-align: center;
+        color: #39c2d7;
+        font-size: 1.5rem;
+    }
+
+    .forecast-table {
+        width: 100%;
+    }
+
+    .sctn-02 .forecast-table, .forecast-th, .forecast-td {
+        margin: 0 auto;
+        border: 1px solid rgba(70, 70, 70, 0.2);
+        border-collapse: collapse;
+        padding: .5rem 1.5rem;
+    }
+
+    .forecast-th {
+        background-color: #39c2d7;
+        color: white;
+    }
+
+    /* ---- Section 3 ---- */
+    .sctn-03 {
+        background-color: #eee;
+        padding: 2rem 3%;
+    }
+
+    .sctn-03 h2 {
+        font-size: 1.5rem;
+        color: #044166;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .sctn-03 h3 {
+        font-size: 1rem;
+        color: #333;
+        margin-top: .25rem;
+    }
+
+    .sctn-03 picture {
+        float: right;
+        width: 50vw;
+        margin-left: 1.5rem;
+    }
+
+    .sctn-03 article p {
+        line-height: 1.8rem;
+    }
+    
+    /* ---- Gallery Rules ----*/
+    .grid {
+        width: 90%;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1 2%;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .gallery figcaption {
+        color: #292929;
+        line-height: 1.4rem;
+        padding: 1rem 5%;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
+
+    /* ---- Footer Rules ---- */
+    footer { clear: both; }
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .footer-info picture { width: 40vw; }
+    .footer-info picture img { border-radius: .5rem; width: 40vw; }
+
+    .footer-copy { font-size: 1rem; padding: 1rem 2%; }
+
+} /* End of Media Query */

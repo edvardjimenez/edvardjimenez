@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment | Week 04 | Preston Town Page</title>
+    <meta name="description" content="Preston Town Page Build">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link rel="stylesheet" href="css/medium-8.css">
+    <link rel="stylesheet" href="css/large-8.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Codes Here -->
+    <header>
+        <picture>
+            <img src="images/weatheria-logo-75px.png" alt="Weatheria Logo">
+        </picture>
+        <div class="headings">
+            <h1>Weatheria</h1>
+            <h2>Personal Weather Companion</h2>
+        </div>
+    </header>
+
+    <!---- Navigation Codes Here ---->
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!---- Main Codes Here ---->
+    <main>
+        <h1>Course Proposal Application</h1>
+        
+        <form method="GET" thanks.html">
+            <fieldset>
+                <legend>Storm Center</legend>
+                
+                <label> Full Name* <input type="text" name="fullname" pattern="[A-Za-z]+" required></label>
+                <label> Email <input type="email" name="email" placeholder="example@gmail.com"></label>
+                <label> Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label> Zip Code <input type="number" name="zipcode" required></label>
+                <label> Storm Date <input type="date" name="date"></label>
+                <label> Choose a flavor: </label>
+                <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"/>
+                    <datalist id="ice-cream-flavors">
+                        <option value="Chocolate">
+                        <option value="Coconut">
+                        <option value="Mint">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                    </datalist>
+            </fieldset>
+
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advance"> Advance</label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Pre-processor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label class="top"> Course Select
+                    <select name="subject">
+                        <option value="">Please Select &#9662; </option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professinal</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professinal</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professinal</option>
+                        <option value="security">Cyber Security</option>
+                    </select>
+                </label>
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
+            </fieldset>
+            <input type="submit" value="Propose My Course" class="submitBtn">
+        </form>
+    </main>
+
+    <!---- Footer Codes Here ---->
+    <footer>
+        <div class="footer-info">
+            <div class="footer-contact">
+                <h2>Weatheria</h2>
+                <p>
+                    Exact Address, <br>
+                    Town, City, Zipcode
+                    <br><br>
+                    Telephone Number<br>
+                    Email Address
+                    <br><br>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
+                </p>
+            </div>
+
+            <picture>
+                <img src="images/img-map.jpg" alt="Map" sizes="100vw"
+                srcset="images/img-map-small.jpg 400w,
+                        images/img-map-medium.jpg 800w,
+                        images/img-map-large.jpg 1100w,
+                        ">
+            </picture>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+            <p id="dateDisplay"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
