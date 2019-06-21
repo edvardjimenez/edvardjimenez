@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment | Week 04 | Preston Town Page</title>
+    <meta name="description" content="Preston Town Page Build">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link rel="stylesheet" href="css/medium-8.css">
+    <link rel="stylesheet" href="css/large-8.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Codes Here -->
+    <header>
+        <picture>
+            <img src="images/weatheria-logo-75px.png" alt="Weatheria Logo">
+        </picture>
+        <div class="headings">
+            <h1>Weatheria</h1>
+            <h2>Personal Weather Companion</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="thanks">
+            <div class="thankHeadings">
+                <h1>Thank you for filling up the form!</h1>
+                <h2>Your information has already been submitted.</h2>
+            </div>
+
+            <hr>
+
+            <div class="buttonDiv">
+                <button class="button"><a href=stormcenter.html>Go Back</a></button>
+                <button class="button"><a href=preston-8.html>Preston Town</a></button>
+            </div>
+        </div>
+    </main>
+
+    <!---- Footer Codes Here ---->
+    <footer>
+        <div class="footer-info">
+            <div class="footer-contact">
+                <h2>Weatheria</h2>
+                <p>
+                    Exact Address, <br>
+                    Town, City, Zipcode
+                    <br><br>
+                    Telephone Number<br>
+                    Email Address
+                    <br><br>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
+                </p>
+            </div>
+            <picture>
+                <img src="images/img-map.jpg" alt="Map" sizes="100vw"
+                srcset="images/img-map-small.jpg 400w,
+                        images/img-map-medium.jpg 800w,
+                        images/img-map-large.jpg 1100w,
+                        ">
+            </picture>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+            <p id="dateDisplay"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/typerange.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

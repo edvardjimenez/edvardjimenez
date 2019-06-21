@@ -136,6 +136,13 @@
 
     .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
+    /* ---- Form Rules ---- */
+    form {
+        display: block;
+        margin: 3rem auto;
+        max-width: 30%;
+    } 
+
     /* ---- Footer Rules ---- */
     footer { clear: both; }
 

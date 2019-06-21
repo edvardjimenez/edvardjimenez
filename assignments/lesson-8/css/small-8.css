@@ -161,6 +161,82 @@ main h1 {
 
 .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
+/* ---- Form Rules ----*/
+form { margin: 1.5rem 5% 3rem 5%; }
+
+form label.labels, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+    color: gray;
+}
+
+form label.labels input, form label.labels select, form textarea {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: .7rem;
+    color: gray;
+    border-radius: .3rem;
+    border: 2px solid #ddd;
+    background-color: #eee;
+}
+
+form div { margin-bottom: .5rem;}
+
+form label.radio {
+    padding-right: 2rem;
+    color: #555;
+}
+
+form input#getRange { width: 94% }
+form span { color: gray; }
+
+form input.submitButton {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: .7rem;
+    color: white;
+    background-color: #39c2d7;
+    border-radius: .3rem;
+}
+
+form label.labels input:required {
+    border-left: #044166 solid 6px;
+}
+
+form label.labels input:required:valid {
+    border-left: #39c2d7 solid 6px;
+}
+
+/* ---- Thanks Rules ---- */
+main div.thanks { margin: 10rem 3%; }
+main div.thanks h2 {
+    font-size: .9rem;
+    text-align: center;
+    width: 100%;
+    color: #044166;
+}
+
+.thankHeadings, .buttonDiv {
+    text-align: center;
+}
+
+hr { width: 80%; margin: 1rem auto; }
+
+.button {
+    width: 10rem;
+    font-size: 1.2rem;
+    padding: .7rem;
+    color: white;
+    background-color: #39c2d7;
+    border-radius: .3rem;
+    border: none;
+}
+
+.button a { text-decoration: none; color: white; }
 
 /* ---- Footer Rules ---- */
 footer { background-color: #044166; }
