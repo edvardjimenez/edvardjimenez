@@ -1,0 +1,78 @@
+/* || general styles */
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 8px 8px 30px rgba(50, 50, 50, 0.1);
+  }
+  
+  h1, h2, p {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  /* header styles */
+  
+  h1 {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #39c2d7;
+
+    background-color: #044166;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  
+  header p {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 50%;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+    background-color: #39c2d7;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  
+  /* section styles */
+
+  section {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 4rem;
+    justify-content: center;
+  }
+  
+  section p {
+    margin: 5px 0;
+    color: rgb(100, 100, 100);  
+  }
+  
+  section ul {
+    margin-top: 1rem;
+    color: rgb(100, 100, 100);
+  }
+  
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 0px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    color: #044166;
+  }
