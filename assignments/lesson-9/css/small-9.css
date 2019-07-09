@@ -161,6 +161,35 @@ main h1 {
 
 .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
+/* ---- Index Rules ----*/
+.index-grid {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 1rem 3% 5rem 3%;
+}
+
+.index-gallery { margin: 0; }
+
+.index-gallery img {
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.index-gallery figcaption {
+    color: #292929;
+    background-color: rgb(245, 245, 245);
+    line-height: 1.4rem;
+    padding: 1rem 5%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.index-gallery figcaption h2 { margin: .8rem 0 .5rem 0; color: #39c2d7; }
+.index-gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
+
 /* ---- Form Rules ----*/
 form { margin: 1.5rem 5% 3rem 5%; }
 

@@ -136,6 +136,31 @@
 
     .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
+    /* ---- Index Rules ----*/
+    .index-grid {
+        width: 90%;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1 2%;
+    }
+
+    .index-gallery img {
+        width: 100%;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .index-gallery figcaption {
+        color: #292929;
+        line-height: 1.4rem;
+        padding: 1rem 5%;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
     /* ---- Form Rules ---- */
     form {
         display: block;

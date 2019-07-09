@@ -1,40 +1,44 @@
-var header = document.querySelector('header');
-var section = document.querySelector('section');
-        
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
+request.open("GET", requestURL);
+request.responseType = "json";
 request.send();
 
 request.onload = function() {
-    var townInfo = request.response;
-    showInfo(townInfo);
+  var townInfo = request.response;
+  showData(townInfo);
 }
 
-function showInfo(jsonObj) {
-    var townData = jsonObj['towns'];
-              
-    for (var i = 0; i < townData.length; i++) {
-        var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
-        var myH3 = document.createElement('h3');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
+function showData(jsonObj) {
+  var townData = jsonObj["towns"];
 
-        myH2.textContent = townData[i].name;
-        myH3.textContent = townData[i].name;
-        myPara1.textContent = 'Year Founded: ' + townData[i].yearFounded;
-        myPara2.textContent = 'Current Population: ' + townData[i].currentPopulation;
-        myPara3.textContent = 'Average Rainfall:' + townData[i].averageRainfall;
-        
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myH3);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
+  for (var i = 0; i < townData.length; i++) {
+    if (townData[i].name == "Preston" || townData[i].name == "Fish Haven" || townData[i].name == "Soda Springs") {
+      var string = "";
+      for (var j = 0; j < townData[i].name.length; j++) {
+        if (townData[i].name.charAt(j) != " ") {
+          string += townData[i].name.charAt(j);
+        }
+      }
+      console.log(string);
+      var townName = document.getElementById(string);
 
-        section.appendChild(myArticle);
+      var myTown = document.createElement("h2");
+      myTown.textContent = townData[i].name;
+      townName.appendChild(myTown);
+
+      var myH3 = document.createElement("h3");
+      myH3.textContent = townData[i].motto;
+      townName.appendChild(myH3);
+
+      var myArticle = document.createElement("article");
+      townName.appendChild(myArticle);
+
+      var myPara = document.createElement("p");
+      myPara.innerHTML = "Year Founded: " + townData[i].yearFounded + "<br>" +
+                            "Population: " + townData[i].currentPopulation + "<br>" +
+                            "Average Rainfall: " + townData[i].averageRainfall;
+      myArticle.appendChild(myPara);
     }
+  }
 }
