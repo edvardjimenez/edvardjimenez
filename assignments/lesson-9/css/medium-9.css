@@ -136,29 +136,32 @@
 
     .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
+    /* ---- Index Hero Rules ---- */
+    .index-hero { height: 50vw; }
+    .index-hero h1 { font-size: 2.5rem; }
+    .index-hero p { font-size: 1.2rem; margin-top: .5rem; }
+    .index-button button {
+        margin: .3rem .5rem;
+        width: 10rem;
+        border: none;
+        outline: 0;
+        padding: .7rem;
+        color: #044166;
+        background-color: #39c2d7;
+        text-align: center;
+        cursor: pointer;
+      }
+
+    .index-button button:hover {
+        background-color: #044166;
+        color: white;
+    }
+
     /* ---- Index Rules ----*/
     .index-grid {
-        width: 90%;
+        width: 60%;
         margin: 1rem auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 1 2%;
-    }
-
-    .index-gallery img {
-        width: 100%;
-        border-top-left-radius: .5rem;
-        border-top-right-radius: .5rem;
-        text-align: center;
-        margin: 0;
-    }
-
-    .index-gallery figcaption {
-        color: #292929;
-        line-height: 1.4rem;
-        padding: 1rem 5%;
-        border-bottom-left-radius: .5rem;
-        border-bottom-right-radius: .5rem;
+        grid-template-columns: 1fr;
     }
 
     /* ---- Form Rules ---- */

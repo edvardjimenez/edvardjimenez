@@ -125,6 +125,17 @@
 
     .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
+    /* ---- Index Rules ----*/
+    .index-grid {
+        width: 90%;
+        margin: 2rem auto 5rem auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+
+    .index-gallery { box-shadow: 8px 8px 30px rgba(97, 25, 25, 0.1); }
+    .index-gallery:hover { box-shadow: 0 0 20px rgba(40, 40, 40, 0.3); }
+
     /* ---- Footer Rules ---- */
     footer {
         clear: both;

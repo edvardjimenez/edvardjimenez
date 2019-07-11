@@ -161,6 +161,47 @@ main h1 {
 
 .gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
 
+/* ---- Index Hero Rules ---- */
+.index-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.7)),url("../images/index-hero-large.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.index-hero h1 {
+    margin-top: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+.index-hero p {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.index-button button{
+    margin: .3rem 0rem;
+    width: 10rem;
+    border: none;
+    outline: 0;
+    padding: .7rem;
+    color: #044166;
+    background-color: #39c2d7;
+    text-align: center;
+    cursor: pointer;
+}
+
+.index-button a { text-decoration: none; color: white; }
+
 /* ---- Index Rules ----*/
 .index-grid {
     display: grid;
