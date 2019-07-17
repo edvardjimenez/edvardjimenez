@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment | Week 04 | Preston Town Page</title>
+    <meta name="description" content="Preston Town Page Build">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Codes Here -->
+    <header>
+        <picture>
+            <img src="images/weatheria-logo-75px.png" alt="Weatheria Logo">
+        </picture>
+        <div class="headings">
+            <h1>Weatheria</h1>
+            <h2>Personal Weather Companion</h2>
+        </div>
+    </header>
+
+    <!-- Navigation Codes Here -->
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Codes Here -->
+    <main>
+
+        <h1>Preston Town</h1>
+        <section class="sctn sctn-01">
+            <div class="sctn-hero">
+                <picture>
+                    <img src="images/img-hero.jpg" alt="Preston Town" sizes="100vw"
+                    srcset="images/img-hero-small.jpg 400w,
+                            images/img-hero-medium.jpg 800w,
+                            images/img-hero-large.jpg 1100w,
+                            ">
+                </picture>
+                <table>
+                    <th colspan="2">Weather Summary</th>
+                    <tr>
+                        <td>Currently </td>
+                        <td>: <span id="weather-desc"></span></td>
+                    </tr>
+                    <tr>
+                        <td>High</td>
+                        <td>: <span id="weather-temp"></span> ºF</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td>: <span id="wind-chill"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td>: <span id="weather-humidity"></span> %</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td>: <span id="weather-speed"></span> mph</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="sctn sctn-02">
+            <h1>5 Day Forecast</h1>
+            <table class="forecast-table">
+                <tr>
+                    <th class="forecast-th">Monday</th>
+                    <th class="forecast-th">Tuesday</th>
+                    <th class="forecast-th">Wednesday</th>
+                    <th class="forecast-th">Thursday</th>
+                    <th class="forecast-th">Friday</th>
+                </tr>
+                <tr>
+                    <td class="forecast-td">78 ºF</td>
+                    <td class="forecast-td">84 ºF</td>
+                    <td class="forecast-td">79 ºF</td>
+                    <td class="forecast-td">77 ºF</td>
+                    <td class="forecast-td">87 ºF</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="sctn sctn-03">
+            <picture>
+                <img src="images/img-art.jpg" alt="Friends Review" sizes="100vw"
+                srcset="images/img-art-small.jpg 400w,
+                        images/img-art-medium.jpg 800w,
+                        images/img-art-large.jpg 1100w,
+                        ">
+            </picture>
+
+            <h2> Friends Review </h2>
+            <h3> By: Edvard Jimenez </h3>
+
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Sit amet consectetur adipiscing elit duis tristique sollicitudin.
+                    Integer malesuada nunc vel risus commodo viverra.
+                    Eget gravida cum sociis natoque penatibus et magnis.
+                    Auctor urna nunc id cursus metus aliquam. Leo vel fringilla est ullamcorper.
+                    Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Sit amet consectetur adipiscing elit duis tristique sollicitudin.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Codes Here -->
+    <footer>
+        <div class="footer-info">
+            <div class="footer-contact">
+                <h2>Weatheria</h2>
+                <p>
+                    Exact Address, <br>
+                    Town, City, Zipcode
+                    <br><br>
+                    Telephone Number<br>
+                    Email Address
+                    <br><br>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
+                </p>
+            </div>
+
+            <picture>
+                <img src="images/img-map.jpg" alt="Map" sizes="100vw"
+                srcset="images/img-map-small.jpg 400w,
+                        images/img-map-medium.jpg 800w,
+                        images/img-map-large.jpg 1100w,
+                        ">
+            </picture>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+            <p id="dateDisplay"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/weathersum.js"></script>
+</body>
+</html>
