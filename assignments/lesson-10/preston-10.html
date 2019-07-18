@@ -80,21 +80,11 @@
         <section class="sctn sctn-02">
             <h1>5 Day Forecast</h1>
             <table class="forecast-table">
-                <tr>
-                    <th class="forecast-th">Monday</th>
-                    <th class="forecast-th">Tuesday</th>
-                    <th class="forecast-th">Wednesday</th>
-                    <th class="forecast-th">Thursday</th>
-                    <th class="forecast-th">Friday</th>
-                </tr>
-                <tr>
-                    <td class="forecast-td">78 ºF</td>
-                    <td class="forecast-td">84 ºF</td>
-                    <td class="forecast-td">79 ºF</td>
-                    <td class="forecast-td">77 ºF</td>
-                    <td class="forecast-td">87 ºF</td>
-                </tr>
+                <thead id="forecast-thead"></thead>
+                <tbody id="forecast-tbody"></tbody>
             </table>
+            <br>
+            <figcaption>Curent weather data and 5 day forecast source by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap.org</a></figcaption>
         </section>
 
         <section class="sctn sctn-03">
@@ -164,5 +154,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/weathersum.js"></script>
+    <script src="scripts/forecastapi.js"></script>
 </body>
 </html>

@@ -68,19 +68,30 @@
 
     .forecast-table {
         width: 100%;
+        border-collapse: collapse;
+        border: 1px solid rgba(70, 70, 70, 0.2);
     }
 
-    .sctn-02 .forecast-table, .forecast-th, .forecast-td {
+    #forecast-thead tr th, #forecast-tbody tr td {
         margin: 0 auto;
-        border: 1px solid rgba(70, 70, 70, 0.2);
-        border-collapse: collapse;
         padding: .5rem 1.5rem;
+        border-left: 1px solid rgba(70, 70, 70, 0.2);
         text-align: center;
     }
 
-    .forecast-th {
+    #forecast-thead tr th {
         background-color: #39c2d7;
         color: white;
+    }
+
+    .sctn-02 figcaption {
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    .sctn-02 figcaption a {
+        text-decoration: none;
+        color: #39c2d7;
     }
 
     /* ---- Section 3 ---- */
