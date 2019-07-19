@@ -1,9 +1,7 @@
 @media only screen and (min-width: 48rem) {
     nav ul { text-align: center; }
     nav li:first-child { display: none; }
-    nav li {
-        display: inline-block;
-    }
+    nav li { display: inline-block; }
 
     nav ul li a {
         border: none;
@@ -14,7 +12,7 @@
     /* ---- Section 1 ---- */
     .sctn {
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
     }
 
     .sctn-01 {
@@ -94,9 +92,35 @@
         color: #39c2d7;
     }
 
+    /* ---- Article Event Section ---- */
+    #townEvents {
+        width: 50%;
+        margin: 0 auto 2rem auto;
+        padding: 1rem 3%;
+        background-color: rgb(248, 248, 248);
+        border: 2px solid #044166;
+        border-radius: .5rem;
+    }
+
+    #townEvents h1 {
+        margin: 1rem 0 0 0;
+        padding-left: 3%; 
+        text-align: left;
+        color: #044166;
+    }
+
+    #townEvents ul {
+        list-style-type: none;
+        color: #333;
+        text-align: left;
+        line-height: 1.5rem;
+        padding: 1rem 3%;
+        margin: 0;
+    }
+
     /* ---- Section 3 ---- */
     .sctn-03 {
-        background-color: #eee;
+        background-color: rgb(248, 248, 248);
         padding: 2rem 3%;
     }
 

@@ -41,7 +41,6 @@ nav { background-color: #044166; }
 nav ul { margin: 0; padding: 0; }
 nav li { display: none; }
 nav li:first-child { display: block; }
-nav li.active { background-color: #033249; }
 
 nav li a {
     display: block;
