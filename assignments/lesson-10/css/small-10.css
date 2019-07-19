@@ -108,6 +108,34 @@ main h1 {
     display: none;
 }
 
+/* ---- Article Event Section ---- */
+#townEvents {
+    width: 94%;
+    margin: 0 auto 2rem auto;
+    padding: 1rem 3%;
+    background-color: rgb(248, 248, 248);
+    border: 2px solid #044166;
+    border-radius: .5rem;
+}
+
+#townEvents h1 {
+    margin: 1rem 0 0 0;
+    padding-left: 3%;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #044166;
+}
+
+#townEvents ul {
+    list-style-type: none;
+    color: #333;
+    text-align: left;
+    line-height: 1.5rem;
+    padding: 1rem 3%;
+    margin: 0;
+    font-size: .9rem;
+}
+
 .sctn-03 {
     background-color: #f3f3f3;
     padding: 1rem 3%;
