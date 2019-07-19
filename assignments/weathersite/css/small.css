@@ -1,0 +1,370 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ---- Body Rules ---- */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+/* ---- Header Rules ---- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39c2d7;
+    padding: 1rem 2%;
+}
+
+header picture { margin-right: .5rem; }
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+header h2 {
+    font-size: .9rem;
+    color: #044166;
+    margin: 0;
+}
+
+.headings { margin-left: .5rem; }
+
+
+/* ---- Navigation Rules ---- */
+nav { background-color: #044166; }
+
+nav ul { margin: 0; padding: 0; }
+nav li { display: none; }
+nav li:first-child { display: block; }
+
+nav li a {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #eee;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover { background-color: rgba(3, 50, 73, 0.9); }
+nav a.active { background-color: rgba(3, 50, 73, 0.9); }
+.responsive li { display: block; }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ---- Main Rules ---- */
+main h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #39c2d7;
+    margin: 2rem 0 0 0;
+}
+
+.sctn-01 {
+    padding: 2rem 3%;
+    display: block;
+}
+
+.sctn-hero {
+    position: relative;
+}
+
+.sctn-01 picture { width: 100%; margin: 0; }
+.sctn-01 picture img { width: 100%; }
+
+.sctn-01 table th {
+    font-size: 1.1rem;
+    padding: .5rem;
+    border-bottom: .5px solid white;
+}
+
+.sctn-01 table {
+    position: absolute;
+    border: 1px solid;
+    top: 1rem;
+    left: 1rem;
+    background-color: #39c2d7;
+    font-size: 1rem;
+    color: white;
+    width: 13rem;
+    padding: .8rem .8rem;
+    opacity: 0.9;
+}
+
+.sctn-01 table td {
+    padding-top: .4rem;
+}
+
+.sctn-02 {
+    display: none;
+}
+
+/* ---- Article Event Section ---- */
+#townEvents {
+    width: 94%;
+    margin: 0 auto 2rem auto;
+    padding: 1rem 3%;
+    background-color: rgb(248, 248, 248);
+    border: 2px solid #044166;
+    border-radius: .5rem;
+}
+
+#townEvents h1 {
+    margin: 1rem 0 0 0;
+    padding-left: 3%;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #044166;
+}
+
+#townEvents ul {
+    list-style-type: none;
+    color: #333;
+    text-align: left;
+    line-height: 1.5rem;
+    padding: 1rem 3%;
+    margin: 0;
+    font-size: .9rem;
+}
+
+.sctn-03 {
+    background-color: #f3f3f3;
+    padding: 1rem 3%;
+}
+.sctn-03 picture { margin: 0 0 1rem 0; }
+.sctn-03 picture img { width: 100%; border-radius: .5rem; }
+
+.sctn-03 h2 {
+    margin-bottom: .25rem;
+    font-size: 1.5rem;
+    color: #044166;
+}
+
+.sctn-03 h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: .25rem;
+}
+
+.sctn-03 article p {
+    line-height: 1.5rem;
+    color: #333;
+}
+
+/* ---- Gallery Rules ----*/
+.grid {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 1rem 3% 5rem 3%;
+}
+
+.gallery { margin: 0; }
+
+.gallery img {
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.gallery figcaption {
+    color: #292929;
+    background-color: #eee;
+    line-height: 1.4rem;
+    padding: 1rem 5%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
+
+/* ---- Index Hero Rules ---- */
+.index-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.7)),url("../images/index-hero-large.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2.5rem;
+}
+
+.index-hero h1 {
+    margin-top: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+.index-hero p {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.index-button button{
+    margin: .3rem 0rem;
+    width: 10rem;
+    border: none;
+    outline: 0;
+    padding: .7rem;
+    color: #044166;
+    background-color: #39c2d7;
+    text-align: center;
+    cursor: pointer;
+}
+
+.index-button a { text-decoration: none; color: white; }
+
+/* ---- Index Rules ----*/
+.index-grid {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 1rem 3% 5rem 3%;
+}
+
+.index-gallery { margin: 0; }
+
+.index-gallery img {
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.index-gallery figcaption {
+    color: #292929;
+    background-color: rgb(245, 245, 245);
+    line-height: 1.4rem;
+    padding: 1rem 5%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.index-gallery figcaption h2 { margin: .8rem 0 .5rem 0; color: #39c2d7; }
+.index-gallery figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
+
+/* ---- Form Rules ----*/
+form { margin: 1.5rem 5% 3rem 5%; }
+
+form label.labels, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+    color: gray;
+}
+
+form label.labels input, form label.labels select, form textarea {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: .7rem;
+    color: gray;
+    border-radius: .3rem;
+    border: 2px solid #ddd;
+    background-color: #eee;
+}
+
+form div { margin-bottom: .5rem;}
+
+form label.radio {
+    padding-right: 2rem;
+    color: #555;
+}
+
+form input#getRange { width: 94% }
+form span { color: gray; }
+
+form input.submitButton {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: .7rem;
+    color: white;
+    background-color: #39c2d7;
+    border-radius: .3rem;
+}
+
+form label.labels input:required {
+    border-left: #044166 solid 6px;
+}
+
+form label.labels input:required:valid {
+    border-left: #39c2d7 solid 6px;
+}
+
+/* ---- Thanks Rules ---- */
+main div.thanks { margin: 10rem 3%; }
+main div.thanks h2 {
+    font-size: .9rem;
+    text-align: center;
+    width: 100%;
+    color: #044166;
+}
+
+.thankHeadings, .buttonDiv {
+    text-align: center;
+}
+
+hr { width: 80%; margin: 1rem auto; }
+
+.button {
+    width: 10rem;
+    font-size: 1.2rem;
+    padding: .7rem;
+    color: white;
+    background-color: #39c2d7;
+    border-radius: .3rem;
+    border: none;
+}
+
+.button a { text-decoration: none; color: white; }
+
+/* ---- Footer Rules ---- */
+footer { background-color: #044166; }
+
+.footer-info h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #39c2d7;
+}
+
+.footer-info {
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-info picture { width: 100%; }
+.footer-info picture img { border-radius: .5rem; width: 100%; }
+
+.footer-icon { width: 3rem; border-radius: .5rem; margin: 1rem .5%; }
+
+.footer-copy {
+    color: #eee;
+    font-size: .9rem;
+    text-align: center;
+    background-color: #39c2d7;
+    margin: 0;
+    padding: 1.3rem 2%;
+}
+
+.footer-copy p {
+    margin: .3rem;
+}
