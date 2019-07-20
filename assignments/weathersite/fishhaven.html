@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment | Fish Haven Town Page</title>
+    <meta name="description" content="Fish Havem Town Page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Codes Here -->
+    <header>
+        <picture>
+            <img src="images/weatheria-logo-75px.png" alt="Weatheria Logo">
+        </picture>
+        <div class="headings">
+            <h1>Weatheria</h1>
+            <h2>Personal Weather Companion</h2>
+        </div>
+    </header>
+
+    <!-- Navigation Codes Here -->
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html" class="active">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Codes Here -->
+    <main>
+
+        <h1>Fish Haven Town</h1>
+        <section class="sctn sctn-01">
+            <div class="sctn-hero">
+                <picture>
+                    <img src="images/fh-hero.jpg" alt="Fish Haven" sizes="100vw"
+                    srcset="images/fh-hero-small.jpg 400w,
+                            images/fh-hero-medium.jpg 800w,
+                            images/fh-hero-large.jpg 1100w,
+                            ">
+                </picture>
+                <table>
+                    <th colspan="2">Weather Summary</th>
+                    <tr>
+                        <td>Currently </td>
+                        <td>: <span id="weather-desc"></span></td>
+                    </tr>
+                    <tr>
+                        <td>High</td>
+                        <td>: <span id="weather-temp"></span> ºF</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td>: <span id="wind-chill"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td>: <span id="weather-humidity"></span> %</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td>: <span id="weather-speed"></span> mph</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="sctn sctn-02">
+            <h1>5 Day Forecast</h1>
+            <table class="forecast-table">
+                <thead id="forecast-thead"></thead>
+                <tbody id="forecast-tbody"></tbody>
+            </table>
+            <br>
+            <figcaption>Curent weather data and 5 day forecast source by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap.org</a></figcaption>
+        </section>
+        
+        <article id="townEvents">
+            <h1>Town Events</h1>
+        </article>
+
+        <section class="sctn sctn-03">
+            <picture>
+                <img src="images/fh-article.jpg" alt="Friends Review" sizes="100vw"
+                srcset="images/fh-article-small.jpg 400w,
+                        images/fh-article-medium.jpg 800w,
+                        images/fh-article-large.jpg 1100w,
+                        ">
+            </picture>
+
+            <h2> About Fish Haven </h2>
+            <h3>Source : <a href="https://en.wikipedia.org/wiki/Fish_Haven,_Idaho">wikipedia.org</a></h3>
+
+            <article>
+                <p>
+                    Fish Haven, originally named Rush Creek, is an unincorporated community along the shores of Bear Lake in Bear Lake County, Idaho, United States. It is 4 km (2.5 miles) north of the Utah border.
+                </p>
+                <p>
+                    The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in 1867, and remained in operation until 1962. The community was so named because nearby Bear Lake is a favorite fishing spot.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Codes Here -->
+    <footer>
+        <div class="footer-info">
+            <div class="footer-contact">
+                <h2>Weatheria</h2>
+                <p>
+                    Exact Address, <br>
+                    Town, City, Zipcode
+                    <br><br>
+                    Telephone Number<br>
+                    Email Address
+                    <br><br>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="youtube icon"></a>
+                </p>
+            </div>
+
+            <picture>
+                <img src="images/img-map.jpg" alt="Map" sizes="100vw"
+                srcset="images/img-map-small.jpg 400w,
+                        images/img-map-medium.jpg 800w,
+                        images/img-map-large.jpg 1100w,
+                        ">
+            </picture>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy;2019 Weatheria | Edvard Jimenez | CIT 230</p>
+            <p id="dateDisplay"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/fh-weathersum.js"></script>
+    <script src="scripts/fh-forecastapi.js"></script>
+    <script src="scripts/fh-townevents.js"></script>
+</body>
+</html>
