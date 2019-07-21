@@ -75,12 +75,10 @@ main h1 {
     display: block;
 }
 
-.sctn-hero {
-    position: relative;
-}
+.sctn-hero { position: relative; }
 
 .sctn-01 picture { width: 100%; margin: 0; }
-.sctn-01 picture img { width: 100%; }
+.sctn-01 picture img { width: 100%; border-radius: .5rem; }
 
 .sctn-01 table th {
     font-size: 1.1rem;
@@ -91,6 +89,7 @@ main h1 {
 .sctn-01 table {
     position: absolute;
     border: 1px solid;
+    border-radius: .5rem;
     top: 1rem;
     left: 1rem;
     background-color: #39c2d7;
