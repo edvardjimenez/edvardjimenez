@@ -353,10 +353,17 @@ footer { background-color: #044166; }
     padding: 1rem;
 }
 
-.footer-info picture { width: 100%; }
-.footer-info picture img { border-radius: .5rem; width: 100%; }
+.footer-info iframe {
+    width: 90%;
+    height: 90%;
+    border-radius: .5rem;
+}
 
-.footer-icon { width: 3rem; border-radius: .5rem; margin: 1rem .5%; }
+.footer-icon {
+    width: 3rem;
+    border-radius: .5rem;
+    margin: 1rem .5%;
+}
 
 .footer-copy {
     color: #eee;
