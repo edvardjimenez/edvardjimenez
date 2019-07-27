@@ -1,6 +1,7 @@
 {
-    "temples": [{
-            "name": "Manila Philippines Temple",
+    "temples": [
+        {
+            "name": "Manila Temple",
             "photo": "images/temples/img-mnl.jpg",
             "address": ["13 Temple Dr Greenmeadows Subd, Quezon City 1110 Metro Manila, Philippines"],
             "telephone": "(63) 2-635-9111",
@@ -30,7 +31,7 @@
             "photo": "images/temples/img-slc.jpg",
             "address": ["50 W North Temple St Salt Lake City UT 84150-9709 United States"],
             "telephone": "(1) 801-240-2640",
-             "email": "saltlaketemple@lds.org",
+            "email": "saltlaketemple@lds.org",
             "services": [
                 "Clothing rental available",
                 "Cafeteria available",
@@ -61,7 +62,7 @@
             "photo": "images/temples/img-idh.jpg",
             "address": ["750 S 2nd E Rexburg ID 83440-5404 United States"],
             "telephone": "(1) 208-656-0880",
-             "email": "rexburgidahotemple@lds.org",
+            "email": "rexburgidahotemple@lds.org",
             "services": [
                 "Clothing rental available",
                 "No Cafeteria available",
@@ -91,7 +92,7 @@
             "photo": "images/temples/img-rom.jpg",
             "address": ["Via di Settebagni 376 Rome RM Italy"],
             "telephone": "(39) 06-9480-5050",
-             "email": "rometemple@lds.org",
+            "email": "rometemple@lds.org",
             "services": [
                 "Clothing rental available",
                 "Cafeteria available",

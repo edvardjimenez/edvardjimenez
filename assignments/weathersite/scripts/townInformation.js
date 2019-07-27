@@ -36,8 +36,8 @@ function showData(jsonObj) {
 
       var myPara = document.createElement("p");
       myPara.innerHTML = "Year Founded: " + townData[i].yearFounded + "<br>" +
-                            "Population: " + townData[i].currentPopulation + "<br>" +
-                            "Average Rainfall: " + townData[i].averageRainfall;
+                         "Population: " + townData[i].currentPopulation + "<br>" +
+                         "Average Rainfall: " + townData[i].averageRainfall;
       myArticle.appendChild(myPara);
     }
   }

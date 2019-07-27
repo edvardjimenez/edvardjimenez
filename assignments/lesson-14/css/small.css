@@ -311,3 +311,44 @@ footer { background-color: var(--main-color); }
     color: white;
     text-align: center;
 }
+
+/* ==============================
+--------- TEMPLES PAGE ---------
+============================== */
+.temples-section {
+    padding: 6rem 2rem;
+    background-color: var(--bg-color-02);
+}
+
+.temples-section h2 {
+    margin: 0 0 1rem 0;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.temples-grid {
+    display: grid;
+    grid-gap: 3rem;
+}
+
+.temples-page { margin: 0; }
+
+.temples-page img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.temples-grid figcaption {
+    color: #292929;
+    background-color: rgb(245, 245, 245);
+    line-height: 1.4rem;
+    padding: 1rem 5%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.temples-page figcaption h2 { margin: .8rem 0 .5rem 0; color: #39c2d7; }
+.temples-page figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
