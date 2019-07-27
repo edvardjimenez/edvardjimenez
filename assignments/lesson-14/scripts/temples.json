@@ -1,9 +1,10 @@
 {
-    "temples": [
+    "temples":
+    [
         {
-            "name": "Manila Temple",
+            "name": "Manila Philippines Temple",
             "photo": "images/temples/img-mnl.jpg",
-            "address": ["13 Temple Dr Greenmeadows Subd, Quezon City 1110 Metro Manila, Philippines"],
+            "address": "13 Temple Dr Greenmeadows Subd, Quezon City 1110 Metro Manila, Philippines",
             "telephone": "(63) 2-635-9111",
             "email": "manilatemple@lds.org",
             "services": [
@@ -29,13 +30,13 @@
         {
             "name": "Salt Lake Temple",
             "photo": "images/temples/img-slc.jpg",
-            "address": ["50 W North Temple St Salt Lake City UT 84150-9709 United States"],
+            "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
             "telephone": "(1) 801-240-2640",
             "email": "saltlaketemple@lds.org",
             "services": [
-                "Clothing rental available",
-                "Cafeteria available",
-                "No patron housing available",
+                "Clothing rental available <br>",
+                "Cafeteria available <br>",
+                "No patron housing available <br>",
                 "Distribution center nearby"
             ],
             "history": [
@@ -60,7 +61,7 @@
         {
             "name": "Rexburg Idaho Temple",
             "photo": "images/temples/img-idh.jpg",
-            "address": ["750 S 2nd E Rexburg ID 83440-5404 United States"],
+            "address": "750 S 2nd E Rexburg ID 83440-5404 United States",
             "telephone": "(1) 208-656-0880",
             "email": "rexburgidahotemple@lds.org",
             "services": [
@@ -90,7 +91,7 @@
         {
             "name": "Rome Italy Temple",
             "photo": "images/temples/img-rom.jpg",
-            "address": ["Via di Settebagni 376 Rome RM Italy"],
+            "address": "Via di Settebagni 376 Rome RM Italy",
             "telephone": "(39) 06-9480-5050",
             "email": "rometemple@lds.org",
             "services": [

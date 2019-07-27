@@ -15,7 +15,7 @@ html {
     --main-color: #10455b;
     --sub-color: #ffaf20;
     --bg-color-01: #f9f3ed;
-    --bg-color-02: #fafafa;
+    --bg-color-02: #f1f1f1;
     --body-color: #535c5f;
     --main-font: 'Roboto Slab', serif;
 }
@@ -105,6 +105,57 @@ header {
     transition: .5s;
 }
 
+/* -------- Temple Nearby Rules -------- */
+.temple-nearby { padding: 6rem 2rem; }
+.temple-nearby h2 {
+    margin: 0 0 1rem 0;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.temple-nearby {
+    display: grid;
+    grid-gap: 3rem;
+}
+
+.temple-nearby figure { margin: 0; }
+
+.temple-nearby figure img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.temple-nearby figcaption {
+    color: #292929;
+    background-color: rgb(245, 245, 245);
+    line-height: 1.4rem;
+    padding: 1rem 5%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.temple-nearby figcaption h3 {
+    margin: 3rem 0;
+    color: var(--sub-color);
+    font-family: var(--main-font);
+    font-size: 3rem;
+}
+.temple-nearby figcaption h4 {
+    margin: 0 0 .5rem 0;
+    color: #044166;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.temple-nearby p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 /* -------- AboutUs Rules -------- */
 .aboutUs-section { padding: 6rem 2rem; }
 .aboutUs-section h2 {
@@ -132,7 +183,10 @@ header {
 
 
 /* -------- OurRooms Rules -------- */
-.ourRooms-section { padding: 6rem 2rem; }
+.ourRooms-section {
+    padding: 6rem 2rem;
+    background-color: var(--bg-color-02);
+}
 .ourRooms-section h2 {
     margin: 0 0 1rem 0;
     font-size: 3rem;
@@ -224,14 +278,17 @@ header {
     line-height: 2.5rem;
 }
 
-.ourRooms-section button a {
+.ourRooms-section button {
     padding: 1rem 3rem;
     color: white;
     font-size: 2rem;
     text-decoration: none;
     background-color: var(--sub-color);
+    border: 0;
     border-radius: 1rem;
 }
+
+.ourRooms-section a { text-decoration: none; color: white; }
 
 /* -------- Temple Photos Rules -------- */
 .templePhotos-section {
@@ -350,5 +407,21 @@ footer { background-color: var(--main-color); }
     border-bottom-right-radius: 1rem;
 }
 
-.temples-page figcaption h2 { margin: .8rem 0 .5rem 0; color: #39c2d7; }
-.temples-page figcaption h3 { margin: 0 0 .5rem 0; color: #044166; }
+.temples-grid figcaption h3 {
+    margin: .8rem 0 .5rem 0;
+    color: var(--sub-color);
+    font-family: var(--main-font);
+    font-size: 2rem;
+}
+.temples-grid figcaption h4 {
+    margin: 0 0 .5rem 0;
+    color: #044166;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.temples-grid p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
