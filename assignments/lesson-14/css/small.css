@@ -20,6 +20,10 @@ html {
     --main-font: 'Roboto Slab', serif;
 }
 
+
+
+
+
 /* -------- Navigation Rules -------- */
 .topnav {
     overflow: hidden;
@@ -57,6 +61,10 @@ html {
     background-color: #ddd;
     color: black;
 }
+
+
+
+
 
 /* -------- Header Rules -------- */
 header {
@@ -105,6 +113,10 @@ header {
     transition: .5s;
 }
 
+
+
+
+
 /* -------- Temple Nearby Rules -------- */
 .temple-nearby { padding: 6rem 2rem; }
 .temple-nearby h2 {
@@ -151,10 +163,24 @@ header {
 }
 
 .temple-nearby p {
+    color: var(--body-color);
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin-bottom: 2rem;
 }
+
+.temple-nearby ul { margin-bottom: 2rem; }
+
+.temple-nearby li {
+    color: var(--body-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    list-style-type: none;
+}
+
+
+
 
 /* -------- AboutUs Rules -------- */
 .aboutUs-section { padding: 6rem 2rem; }
@@ -182,6 +208,9 @@ header {
 }
 
 
+
+
+
 /* -------- OurRooms Rules -------- */
 .ourRooms-section {
     padding: 6rem 2rem;
@@ -194,45 +223,18 @@ header {
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slide-show {
     max-width: 1000px;
     position: relative;
     margin: auto auto 3rem auto;
     border-radius: .5rem;
 }
-  
+ 
 /* Hide the images by default */
 .mySlides { display: none; }
 .mySlides img {
     border-radius: 1rem;
     width: 100%;
-}
-  
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
 }
   
 /* Caption text */
@@ -247,7 +249,7 @@ header {
 }
   
 /* Number text (1/3 etc) */
-.numbertext {
+.number {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -278,6 +280,23 @@ header {
     line-height: 2.5rem;
 }
 
+.ourRooms-section article { margin-bottom: 4rem; }
+.ourRooms-section h4 {
+    margin: 0 0 1rem 0;
+    color: #044166;
+    font-size: 2rem;
+}
+
+.ourRooms-section ul {
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+.ourRooms-section li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
 .ourRooms-section button {
     padding: 1rem 3rem;
     color: white;
@@ -288,7 +307,14 @@ header {
     border-radius: 1rem;
 }
 
-.ourRooms-section a { text-decoration: none; color: white; }
+.ourRooms-section a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 /* -------- Temple Photos Rules -------- */
 .templePhotos-section {
@@ -303,6 +329,9 @@ header {
     padding: 6rem 2rem;
     background-color: var(--bg-color-02);
 }
+
+.pool-section { margin-bottom: 5rem; }
+.cafe-section { margin-top: 5rem; }
 
 .ourAmenities-section figure img {
     width: 100%;
@@ -323,7 +352,12 @@ header {
 .art-ourAmenities p {
     font-size: 1.6rem;
     line-height: 2.5rem;
-    margin-bottom: 2rem;
+}
+
+.ourAmenities-section h3 {
+    margin: 3rem 0 1rem 0;
+    color: #044166;
+    font-size: 2rem;
 }
 
 /* -------- Footer Rules -------- */
@@ -356,6 +390,13 @@ footer { background-color: var(--main-color); }
 
 .footer-info p:last-child {
     font-size: 1.3rem;
+}
+
+.footer-disclaimer p {
+    margin-top: 5rem;
+    padding: 0 8rem;
+    color: rgba(245, 245, 245, 0.2);
+    text-align: center;
 }
 
 .footer-final {
