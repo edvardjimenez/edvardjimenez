@@ -81,7 +81,6 @@ function showData(jsonObj) {
         
 
         div.appendChild(myFigure);
-        div.appendChild(myFigCap);
       }
     }
   }

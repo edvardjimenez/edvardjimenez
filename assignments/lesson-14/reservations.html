@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites | Homepage</title>
+    <meta name="description" content="Homepage of Temple Inn & Suites">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Simulate a smartphone / tablet -->
+    <div class="nav-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html" class="company-logo"><span class="logo-temple">Temple</span> Inn & Suites</a>
+            <div id="myLinks">
+                <a href="temples.html">Temple</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="#about">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+
+    <header>
+        <div class="main-heading">
+            <i class="fas fa-place-of-worship"></i>
+            <h1>Temple</h1>
+            <h2>Inn & Suites</h2>
+            <a href="#" class="book-btn">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Reservation Form</h2>
+            <form action="thanks.html" method="GET">
+                <fieldset>
+                    <legend>Hotel Reservation Info</legend>
+                    <label class="labels">Select Location
+                    <input list="location" name="location">
+                        <datalist id="location">
+                            <option value="Manila, PH">
+                            <option value="Salt Lake, UT">
+                            <option value="Rexburg, ID">
+                            <option value="Rome, IT">
+                        </datalist>
+                    </label>
+                    <label class="labels">Date<input type="date" name="date"></label>
+
+                    <label class="labels label-select"> Number of Rooms
+                        <select name="roomnumber">
+                            <option value="" selected disabled> -- Select Number of Rooms -- </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+
+                    <label class="labels label-select"> Room Type
+                        <select name="roomtype">
+                            <option value="" selected disabled> -- Select Room Type -- </option>
+                            <option value="superior">Superior Room</option>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="junior">Junior Suite</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Guests Information</legend>
+                    <label class="labels">
+                        Full Name*
+                        <input type="text" name="fullname" pattern="[A-Z a-z]+" required>
+                    </label>
+                    <label class="labels">
+                        Email*
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                    </label>
+                    <label class="labels">
+                        Phone*
+                        <input type="tel" name="phone" placeholder="123-4567-890" required>
+                    </label>
+                    <label class="labels">
+                        Country*
+                        <input type="text" name="country" required
+                    </label>
+                </fieldset>
+
+                <label class="labels">Special Instruction & Requests
+                <textarea name="comments" placeholder="Type Here..."></textarea></label>
+
+                <input type="submit" class="submitButton" name="submission" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <section class="footer-disclaimer">
+                <p>The images used in this website is for the demonstration of this project only. Credit goes to all of the owners of the orignal images.</p>
+            </section>
+            <section class="footer-info">
+                <p>Temple Inn & Suites</p>
+                <p>&copy;2019 All Rights Reserved</p>
+            </section>
+            <section class="footer-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+            </section>
+        </div>
+        
+        <section class="footer-final">
+            <p>Edvard Jimenez | CIT 230 | Final Project</p>
+        </section>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/14d6e52732.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/reservations.js"></script>
+</body>
+</html>
